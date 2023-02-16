@@ -96,7 +96,7 @@ def batch(df: pd.DataFrame, tablename: str) -> None:
 
         engine.connect().close()
 
-@flow(name='Yah-Postgres-ETL')
+@flow(name='Flow-Postgres-ETL')
 def main(url: str, tablename: str):
 
     url = url
