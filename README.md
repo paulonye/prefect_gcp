@@ -7,7 +7,7 @@
 >
 >[Link to the Yahoo Finance Website](https://finance.yahoo.com/crypto/?.tsrc=fin-srch&offset=0&count=15)
 >
->[Link to the Medium Article](https://medium.com/@nwosupaul141/batching-web-data-into-a-postgres-database-hosted-on-google-cloud-15af1674cdb3) 
+>[Link to the Medium Article](https://medium.com/@nwosupaul141/orchestrating-data-pipelines-with-prefect-on-gcp-infrastructure-cdc7aaf42250) 
 >
 >[Link to the Previous Medium Article](https://medium.com/@nwosupaul141/batching-web-data-into-a-postgres-database-hosted-on-google-cloud-15af1674cdb3)
 >
