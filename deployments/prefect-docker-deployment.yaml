@@ -1,0 +1,61 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-gcs-to-bq'
+###
+name: docker-test
+description: Main ETL flow to load data into Big Query
+version: 0db2a9a4761974fd3d83e4a3b79b88ee
+# The work queue that will handle this deployment's runs
+work_queue_name: dev
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-gcs-to-bq
+manifest_path: null
+infrastructure:
+  type: docker-container
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  image: us-east1-docker.pkg.dev/sendme-test-db/test-reg/gcs-flow:tag1
+  image_pull_policy: null
+  image_registry: null
+  networks: []
+  network_mode: null
+  auto_remove: true
+  volumes: []
+  stream_output: true
+  memswap_limit: null
+  mem_limit: null
+  privileged: false
+  _block_document_id: d7e2cf16-ff2e-4ee6-b693-f262ae355a63
+  _block_document_name: zoom
+  _is_anonymous: false
+  block_type_slug: docker-container
+  _block_type_slug: docker-container
+storage:
+  repository: https://github.com/paulonye/prefect_gcp.git
+  reference: null
+  access_token: '**********'
+  include_git_objects: true
+  _block_document_id: 074afe57-2614-4d02-9bd1-0cb896d88339
+  _block_document_name: github-block
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: prefect_gcp_local/etl_gcs_bq.py:etl_gcs_to_bq
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-05-08T12:01:11.931419+00:00'
